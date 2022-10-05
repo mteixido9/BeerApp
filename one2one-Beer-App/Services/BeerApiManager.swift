@@ -7,8 +7,9 @@
 
 import Foundation
 
-class ApiManager {
-    public static let shared = ApiManager()
+class BeerApiManager {
+    public static let shared = BeerApiManager()
+    var isFetchInProgress = false
     
     func retrieveBeers(success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
         ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers") {response in
@@ -20,6 +21,16 @@ class ApiManager {
     
     func getRandomBeer(success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
         ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers/random") {response in
+            success(response)
+        } fail: {
+            fail()
+        }
+    }
+    
+    func getBeerFor(food:String, success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
+        let replacedFood = food.replacingOccurrences(of: " ", with: "_")
+        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers?food=\(replacedFood)")
+        {response in
             success(response)
         } fail: {
             fail()

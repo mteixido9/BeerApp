@@ -4,8 +4,18 @@ class BeersViewModel {
     var beersLoaded: (([Beer]?, Bool) -> Void)?
     var beerList: [Beer]?
 
-    func callService(_ completionHandler:@escaping (()-> Void)) {
-        ApiManager.shared.retrieveBeers{ [weak self] response in
+    func retrieveBeers(_ completionHandler:@escaping (()-> Void)) {
+        BeerApiManager.shared.retrieveBeers{ [weak self] response in
+            self?.beerList = response
+            self?.handleResponse(response: response, success: true)
+            completionHandler()
+        } fail: { [weak self] in
+            self?.handleResponse(response: nil, success: false)
+        }
+    }
+    
+    func retrieveBeersBy(foodName: String, _ completionHandler:@escaping (()-> Void)){
+        BeerApiManager.shared.getBeerFor(food: foodName) { [weak self] response in
             self?.beerList = response
             self?.handleResponse(response: response, success: true)
             completionHandler()

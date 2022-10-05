@@ -3,16 +3,27 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #2 in ApiManager.retrieveBeers(success:fail:):ApiManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in BeersViewModel.callService():BeersViewModel.swift">
+         contextName = "BeersViewModel.handleResponse(response:success:):BeersViewModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "beerList">
+               value = "self.beersList">
             </PersistentString>
             <PersistentString
-               value = "self.beerLsit">
+               value = "self.beerList">
+            </PersistentString>
+            <PersistentString
+               value = "BeersList">
+            </PersistentString>
+            <PersistentString
+               value = "self.beersLoaded">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:cellForRowAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "beersViewModel.beerList">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -28,15 +39,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ApiManager.retrieveBeers(success:fail:):ApiManager.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in ServiceManager.callService&lt;&#x3c4;_0_0&gt;(urlString:success:fail:):ServiceManager.swift">
+         contextName = "BeersViewModel.numberOrRows():BeersViewModel.swift">
       </ContextState>
       <ContextState
          contextName = "ViewController.tableView(_:numberOfRowsInSection:):ViewController.swift">
@@ -50,7 +53,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "BeersViewModel.numberOrRows():BeersViewModel.swift">
+         contextName = "closure #1 in ServiceManager.callService&lt;&#x3c4;_0_0&gt;(urlString:success:fail:):ServiceManager.swift">
       </ContextState>
       <ContextState
          contextName = "BeerTableViewCell.configureDailyWeatherCell(beerName:beerTag:abv:ibu:beerImage:):BeerTableViewCell.swift">
@@ -64,19 +67,43 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "BeersViewModel.handleResponse(response:success:):BeersViewModel.swift">
+         contextName = "closure #2 in ApiManager.retrieveBeers(success:fail:):ApiManager.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BeersViewModel.callService(_:):BeersViewModel.swift">
          <PersistentStrings>
             <PersistentString
-               value = "self.beersList">
+               value = "beerList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BeersViewModel.callService():BeersViewModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "beerList">
             </PersistentString>
             <PersistentString
-               value = "self.beerList">
+               value = "self.beerLsit">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in BeersViewModel.retrieveBeers(_:):BeersViewModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ApiManager.retrieveBeers(success:fail:):ApiManager.swift">
+         <PersistentStrings>
             <PersistentString
-               value = "BeersList">
+               value = "response">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BeerApiManager.getBeerFor(food:success:fail:):BeerApiManager.swift">
+         <PersistentStrings>
             <PersistentString
-               value = "self.beersLoaded">
+               value = "response">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

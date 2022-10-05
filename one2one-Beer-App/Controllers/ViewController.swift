@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  one2one-Beer-App
-//
-//  Created by Marc  Teixidó Carrera on 1/10/22.
-//
-
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate{
  
     let beersViewModel = BeersViewModel()
     
@@ -17,11 +10,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         startService()
-        setupUI()
+        setDelegates()
     }
     
     private func startService(){
-        beersViewModel.callService { [self] in
+        beersViewModel.retrieveBeers { [self] in
             DispatchQueue.main.async {
                 tableView.reloadData()
             }
@@ -29,8 +22,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-    private func setupUI() {
-        //self.tableView.register(BeerTableViewCell.self, forCellReuseIdentifier: "BeerCell")
+    private func setDelegates() {
+        self.searchBar.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
     }
@@ -40,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
+        120
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,10 +43,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let beerCell = tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as! BeerTableViewCell
         guard let beerList = beersViewModel.beerList else { return beerCell }
-        beerCell.configureDailyWeatherCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
-        
+        DispatchQueue.main.async {
+            beerCell.configureDailyWeatherCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
+        }
         return beerCell
     }
-
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == ""  { return }
+        if searchText.count >= 3{
+            beersViewModel.retrieveBeersBy(foodName: searchText) {
+                DispatchQueue.main.async { [self] in
+                    tableView.reloadData()
+                }
+            }
+        }
+    }
 }
 
