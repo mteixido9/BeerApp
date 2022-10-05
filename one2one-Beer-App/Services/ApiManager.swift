@@ -11,7 +11,15 @@ class ApiManager {
     public static let shared = ApiManager()
     
     func retrieveBeers(success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
-        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers") { (response: [Beer]) in //FALLA LA PETICIÓ MIRAR-ho BE
+        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers") {response in
+            success(response)
+        } fail: {
+            fail()
+        }
+    }
+    
+    func getRandomBeer(success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
+        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers/random") {response in
             success(response)
         } fail: {
             fail()

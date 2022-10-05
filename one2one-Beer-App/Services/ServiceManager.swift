@@ -22,7 +22,8 @@ class ServiceManager {
             guard error == nil, let data = data else { return }
             print(data)
             do{
-                let response = try JSONDecoder().decode(Beer.self, from: data)
+                let response = try JSONDecoder().decode(T.self, from: data)
+                success(response)
             }catch  let error {
                 print("Failed to decode object...",error)
             }

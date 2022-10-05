@@ -1,0 +1,6 @@
+framework module Pods_one2one_Beer_App_one2one_Beer_AppUITests {
+  umbrella header "Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

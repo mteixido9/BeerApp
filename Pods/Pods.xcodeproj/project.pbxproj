@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00BA0715F7404431A19777E476E69521 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1369BD7D966A8CF780EF82FEE08735BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2D6B76DB19443B3A7E4AD29F13C20025 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C278B32CB30E6EF4C5CEB90E6E165E /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m */; };
+		83E8A76E9F5594D961D8E27D2DBB9AB8 /* Pods-one2one-Beer-App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EADFB8DEB1483A3EF5F7D67D9BB21726 /* Pods-one2one-Beer-App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9451B4C60F2BBF57C5028E1E7BA2534A /* Pods-one2one-Beer-AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F93112DAF5833E29689DEDC77C2B45BC /* Pods-one2one-Beer-AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3028D078333481C7F311D5CA1A8A039 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E1E3AA58DC15DEE9ED03B09546D089F4 /* Pods-one2one-Beer-App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86D7315FFCC4EC7C5BEE2D5FB6BA9D0E /* Pods-one2one-Beer-App-dummy.m */; };
+		EB896302258889EA1686382186AC8520 /* Pods-one2one-Beer-AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D741D825C15EC9AF6745BB5BFC0FDE /* Pods-one2one-Beer-AppTests-dummy.m */; };
+		F97BACFB9E2AB1AFB9D2C4E133DFF5DE /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D19E2FAA9EC73218BEDB294ACB2692 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E32677F0809773B6379314DF04D3F17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6217EDF259B6F6B38033FE8269EDE5C6;
+			remoteInfo = "Pods-one2one-Beer-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02863C0AB675F4C124B9138694E45756 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests.modulemap"; sourceTree = "<group>"; };
+		0462E4B96019750ACD9E9EC61DE0B0E1 /* Pods-one2one-Beer-App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-one2one-Beer-App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E0B9AB70AEB10BE95572A583DAF39C9 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0ED1CC0D65A968407CB4BD2A9FF829BD /* Pods-one2one-Beer-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-App.debug.xcconfig"; sourceTree = "<group>"; };
+		152A324B9BAEDAEE967E63FF8B7B8F8D /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		20D19E2FAA9EC73218BEDB294ACB2692 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		2488434F0C7AE134DE4F4D93BCBBDAF0 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		25EE9DE556DCCEF122D2300927A1A074 /* Pods-one2one-Beer-AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A055CA28F9A91FF834563F5E7894B1F /* Pods-one2one-Beer-AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-one2one-Beer-AppTests"; path = Pods_one2one_Beer_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351871F11DBD9BED485495EC81B580D6 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests-Info.plist"; sourceTree = "<group>"; };
+		37C278B32CB30E6EF4C5CEB90E6E165E /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m"; sourceTree = "<group>"; };
+		3F04E61C20D5F07E847BCF00680798D7 /* Pods-one2one-Beer-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52AF1D228DD484CA6F1F4EAF97FF142E /* Pods-one2one-Beer-App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-App-Info.plist"; sourceTree = "<group>"; };
+		61FF7A771E4BA9772AA39557B9C34348 /* Pods-one2one-Beer-App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-App-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B4AB810A1854F18444C7741B7839E0D /* Pods-one2one-Beer-AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-one2one-Beer-AppTests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83BC2683CF698DE02FF59E3AD1465462 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86D7315FFCC4EC7C5BEE2D5FB6BA9D0E /* Pods-one2one-Beer-App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-one2one-Beer-App-dummy.m"; sourceTree = "<group>"; };
+		87D12B0D7EC28613836D0CA11C80C706 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-one2one-Beer-App-one2one-Beer-AppUITests"; path = Pods_one2one_Beer_App_one2one_Beer_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D25ADAE1389368DED1C66C6AED2C1C /* Pods-one2one-Beer-App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-one2one-Beer-App"; path = Pods_one2one_Beer_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B9D741D825C15EC9AF6745BB5BFC0FDE /* Pods-one2one-Beer-AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-one2one-Beer-AppTests-dummy.m"; sourceTree = "<group>"; };
+		BF6BD921B19D01FBAD4C88B1192FF77B /* Pods-one2one-Beer-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-App.release.xcconfig"; sourceTree = "<group>"; };
+		C2F6EEEB4AAAC24FAAAE8FEAFEE38282 /* Pods-one2one-Beer-App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-one2one-Beer-App.modulemap"; sourceTree = "<group>"; };
+		E2EB3863D69222044D9A51ACC3334360 /* Pods-one2one-Beer-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-one2one-Beer-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		EADFB8DEB1483A3EF5F7D67D9BB21726 /* Pods-one2one-Beer-App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-one2one-Beer-App-umbrella.h"; sourceTree = "<group>"; };
+		EDC798C4199E8902EB2F0977DCC2F2DA /* Pods-one2one-Beer-AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-one2one-Beer-AppTests-Info.plist"; sourceTree = "<group>"; };
+		F93112DAF5833E29689DEDC77C2B45BC /* Pods-one2one-Beer-AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-one2one-Beer-AppTests-umbrella.h"; sourceTree = "<group>"; };
+		FF672B44B62BFF0F5B2106D521344EF1 /* Pods-one2one-Beer-AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-one2one-Beer-AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08E2AB9A24723A69943540764253EB5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00BA0715F7404431A19777E476E69521 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABB20B88806F69696C9C17216CEE1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3028D078333481C7F311D5CA1A8A039 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		199040EAE7585BD3DCE68AC1E7345036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1369BD7D966A8CF780EF82FEE08735BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BCC718262161F970D624BBF9686F888 /* Pods-one2one-Beer-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B4AB810A1854F18444C7741B7839E0D /* Pods-one2one-Beer-AppTests.modulemap */,
+				FF672B44B62BFF0F5B2106D521344EF1 /* Pods-one2one-Beer-AppTests-acknowledgements.markdown */,
+				25EE9DE556DCCEF122D2300927A1A074 /* Pods-one2one-Beer-AppTests-acknowledgements.plist */,
+				B9D741D825C15EC9AF6745BB5BFC0FDE /* Pods-one2one-Beer-AppTests-dummy.m */,
+				EDC798C4199E8902EB2F0977DCC2F2DA /* Pods-one2one-Beer-AppTests-Info.plist */,
+				F93112DAF5833E29689DEDC77C2B45BC /* Pods-one2one-Beer-AppTests-umbrella.h */,
+				3F04E61C20D5F07E847BCF00680798D7 /* Pods-one2one-Beer-AppTests.debug.xcconfig */,
+				E2EB3863D69222044D9A51ACC3334360 /* Pods-one2one-Beer-AppTests.release.xcconfig */,
+			);
+			name = "Pods-one2one-Beer-AppTests";
+			path = "Target Support Files/Pods-one2one-Beer-AppTests";
+			sourceTree = "<group>";
+		};
+		4A2226194BC04BA5FCF334C231552D6A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				671C0CB1A91A4846E8F0B9AC0E8D504A /* Pods-one2one-Beer-App */,
+				9EC446F6FBFB459333124254B5EB5F2E /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */,
+				3BCC718262161F970D624BBF9686F888 /* Pods-one2one-Beer-AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		671C0CB1A91A4846E8F0B9AC0E8D504A /* Pods-one2one-Beer-App */ = {
+			isa = PBXGroup;
+			children = (
+				C2F6EEEB4AAAC24FAAAE8FEAFEE38282 /* Pods-one2one-Beer-App.modulemap */,
+				0462E4B96019750ACD9E9EC61DE0B0E1 /* Pods-one2one-Beer-App-acknowledgements.markdown */,
+				61FF7A771E4BA9772AA39557B9C34348 /* Pods-one2one-Beer-App-acknowledgements.plist */,
+				86D7315FFCC4EC7C5BEE2D5FB6BA9D0E /* Pods-one2one-Beer-App-dummy.m */,
+				52AF1D228DD484CA6F1F4EAF97FF142E /* Pods-one2one-Beer-App-Info.plist */,
+				EADFB8DEB1483A3EF5F7D67D9BB21726 /* Pods-one2one-Beer-App-umbrella.h */,
+				0ED1CC0D65A968407CB4BD2A9FF829BD /* Pods-one2one-Beer-App.debug.xcconfig */,
+				BF6BD921B19D01FBAD4C88B1192FF77B /* Pods-one2one-Beer-App.release.xcconfig */,
+			);
+			name = "Pods-one2one-Beer-App";
+			path = "Target Support Files/Pods-one2one-Beer-App";
+			sourceTree = "<group>";
+		};
+		9EC446F6FBFB459333124254B5EB5F2E /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02863C0AB675F4C124B9138694E45756 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.modulemap */,
+				83BC2683CF698DE02FF59E3AD1465462 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.markdown */,
+				2488434F0C7AE134DE4F4D93BCBBDAF0 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-acknowledgements.plist */,
+				37C278B32CB30E6EF4C5CEB90E6E165E /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m */,
+				351871F11DBD9BED485495EC81B580D6 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-Info.plist */,
+				20D19E2FAA9EC73218BEDB294ACB2692 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h */,
+				152A324B9BAEDAEE967E63FF8B7B8F8D /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.debug.xcconfig */,
+				0E0B9AB70AEB10BE95572A583DAF39C9 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig */,
+			);
+			name = "Pods-one2one-Beer-App-one2one-Beer-AppUITests";
+			path = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EBE9880830390781BE66FCF52E930014 /* Products */,
+				4A2226194BC04BA5FCF334C231552D6A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBE9880830390781BE66FCF52E930014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89D25ADAE1389368DED1C66C6AED2C1C /* Pods-one2one-Beer-App */,
+				87D12B0D7EC28613836D0CA11C80C706 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */,
+				2A055CA28F9A91FF834563F5E7894B1F /* Pods-one2one-Beer-AppTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E4717543F0B350A7C9AE7893201E798 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97BACFB9E2AB1AFB9D2C4E133DFF5DE /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5CA90B560CD1DE76A48F5E0E4DC5465 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E8A76E9F5594D961D8E27D2DBB9AB8 /* Pods-one2one-Beer-App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9858325C423C139115C36C45E2F0DEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9451B4C60F2BBF57C5028E1E7BA2534A /* Pods-one2one-Beer-AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46E12B6151656F44F7F6E8ABEFAD4971 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2317E023B868522F081186F9F1C2D145 /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-App-one2one-Beer-AppUITests" */;
+			buildPhases = (
+				2E4717543F0B350A7C9AE7893201E798 /* Headers */,
+				BEF69C4BA11BECC86E078E46B95EBFED /* Sources */,
+				199040EAE7585BD3DCE68AC1E7345036 /* Frameworks */,
+				A77275D0CC9ACB88AF0D1F82FBFFE1A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-one2one-Beer-App-one2one-Beer-AppUITests";
+			productName = Pods_one2one_Beer_App_one2one_Beer_AppUITests;
+			productReference = 87D12B0D7EC28613836D0CA11C80C706 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6217EDF259B6F6B38033FE8269EDE5C6 /* Pods-one2one-Beer-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 735053A5E5F36797CB97828CF04B864F /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-App" */;
+			buildPhases = (
+				E5CA90B560CD1DE76A48F5E0E4DC5465 /* Headers */,
+				1BF2E7956C461DE746BAB9D7710CC66B /* Sources */,
+				0ABB20B88806F69696C9C17216CEE1D6 /* Frameworks */,
+				542CD0D7760AC33B73BE0C5BB7B475AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-one2one-Beer-App";
+			productName = Pods_one2one_Beer_App;
+			productReference = 89D25ADAE1389368DED1C66C6AED2C1C /* Pods-one2one-Beer-App */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7BE8BC2A1CD121269520903DAA81717 /* Pods-one2one-Beer-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E3929290EF8CD3EDBBF8BD31C9188A /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-AppTests" */;
+			buildPhases = (
+				E9858325C423C139115C36C45E2F0DEB /* Headers */,
+				D95093E748918642ED423D935AFDE49B /* Sources */,
+				08E2AB9A24723A69943540764253EB5D /* Frameworks */,
+				7D2DD4C5EF005DD7F940E68E6013B725 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9D5650F7BEE870F4B98AA4B91B14833 /* PBXTargetDependency */,
+			);
+			name = "Pods-one2one-Beer-AppTests";
+			productName = Pods_one2one_Beer_AppTests;
+			productReference = 2A055CA28F9A91FF834563F5E7894B1F /* Pods-one2one-Beer-AppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EBE9880830390781BE66FCF52E930014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6217EDF259B6F6B38033FE8269EDE5C6 /* Pods-one2one-Beer-App */,
+				46E12B6151656F44F7F6E8ABEFAD4971 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests */,
+				A7BE8BC2A1CD121269520903DAA81717 /* Pods-one2one-Beer-AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542CD0D7760AC33B73BE0C5BB7B475AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D2DD4C5EF005DD7F940E68E6013B725 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77275D0CC9ACB88AF0D1F82FBFFE1A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BF2E7956C461DE746BAB9D7710CC66B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E3AA58DC15DEE9ED03B09546D089F4 /* Pods-one2one-Beer-App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF69C4BA11BECC86E078E46B95EBFED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6B76DB19443B3A7E4AD29F13C20025 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95093E748918642ED423D935AFDE49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB896302258889EA1686382186AC8520 /* Pods-one2one-Beer-AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9D5650F7BEE870F4B98AA4B91B14833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-one2one-Beer-App";
+			target = 6217EDF259B6F6B38033FE8269EDE5C6 /* Pods-one2one-Beer-App */;
+			targetProxy = 7E32677F0809773B6379314DF04D3F17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		65653B9035ACFA7A1BD208B0F8171F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0B9AB70AEB10BE95572A583DAF39C9 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67614F581CAEC9A314984ED86C172EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF6BD921B19D01FBAD4C88B1192FF77B /* Pods-one2one-Beer-App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9929910B2254001E8CF25C3B0BBF59B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED1CC0D65A968407CB4BD2A9FF829BD /* Pods-one2one-Beer-App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A90E31C4E763DAB0ABDBFCDABC582A5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F04E61C20D5F07E847BCF00680798D7 /* Pods-one2one-Beer-AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-AppTests/Pods-one2one-Beer-AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-AppTests/Pods-one2one-Beer-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D9BF95846F4ED430075197ADA974339C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152A324B9BAEDAEE967E63FF8B7B8F8D /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FDD1867C0A0C2668A60F9BC52CCC8190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EB3863D69222044D9A51ACC3334360 /* Pods-one2one-Beer-AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-one2one-Beer-AppTests/Pods-one2one-Beer-AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-one2one-Beer-AppTests/Pods-one2one-Beer-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2317E023B868522F081186F9F1C2D145 /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-App-one2one-Beer-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9BF95846F4ED430075197ADA974339C /* Debug */,
+				65653B9035ACFA7A1BD208B0F8171F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		735053A5E5F36797CB97828CF04B864F /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9929910B2254001E8CF25C3B0BBF59B8 /* Debug */,
+				67614F581CAEC9A314984ED86C172EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85E3929290EF8CD3EDBBF8BD31C9188A /* Build configuration list for PBXNativeTarget "Pods-one2one-Beer-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90E31C4E763DAB0ABDBFCDABC582A5B /* Debug */,
+				FDD1867C0A0C2668A60F9BC52CCC8190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
