@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4924826828EF43E4003113E5 /* AmountEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4924826728EF43E4003113E5 /* AmountEmoji.swift */; };
 		4994463628E847330057547C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463528E847330057547C /* AppDelegate.swift */; };
 		4994463828E847330057547C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463728E847330057547C /* SceneDelegate.swift */; };
 		4994463A28E847330057547C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463928E847330057547C /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		2940928641EB0444AC175D42 /* Pods-one2one-Beer-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one2one-Beer-App.release.xcconfig"; path = "Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App.release.xcconfig"; sourceTree = "<group>"; };
+		4924826728EF43E4003113E5 /* AmountEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountEmoji.swift; sourceTree = "<group>"; };
 		4994463228E847330057547C /* one2one-Beer-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "one2one-Beer-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4994463528E847330057547C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4994463728E847330057547C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4994466A28EAF2B20057547C /* Beer.swift */,
+				4924826728EF43E4003113E5 /* AmountEmoji.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				4994463A28E847330057547C /* ViewController.swift in Sources */,
 				4994463628E847330057547C /* AppDelegate.swift in Sources */,
 				4994463828E847330057547C /* SceneDelegate.swift in Sources */,
+				4924826828EF43E4003113E5 /* AmountEmoji.swift in Sources */,
 				49B7850128ED086E000F9579 /* BeerTableViewCell.swift in Sources */,
 				4994467128EB31230057547C /* BeerApiManager.swift in Sources */,
 				4994466B28EAF2B20057547C /* Beer.swift in Sources */,

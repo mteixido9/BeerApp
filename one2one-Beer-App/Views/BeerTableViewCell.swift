@@ -15,7 +15,7 @@ class BeerTableViewCell: UITableViewCell {
     @IBOutlet weak var abvLabel: UILabel!
     @IBOutlet weak var ibuLabel: UILabel!
     
-    public func configureDailyWeatherCell(beerName: String?, beerTag: String?, abv: Double?, ibu:Double?, beerUrlImage: String?) {
+    public func configureBeerCell(beerName: String?, beerTag: String?, abv: Double?, ibu:Double?, beerUrlImage: String?) {
         let url = URL(string: beerUrlImage ?? "")
         let data = try? Data(contentsOf: url!)
         beerImageView.image = UIImage(data: data!)
