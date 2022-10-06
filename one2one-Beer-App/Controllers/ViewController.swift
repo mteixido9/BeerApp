@@ -50,9 +50,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let detailVc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? BeerDetailViewController{
+        if let detailVc = storyboard?.instantiateViewController(withIdentifier: "BeerDetailViewController") as? BeerDetailViewController{
             guard let beerList = beersViewModel.beerList else { return  }
-            detailVc.setupDetailView(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl, beerDescription: beerList[indexPath.row].description)
+            detailVc.image = beerList[indexPath.row].imageUrl ?? ""
+            detailVc.name = beerList[indexPath.row].name ?? ""
+            detailVc.tag = beerList[indexPath.row].tagline ?? ""
+            detailVc.descriptionText = beerList[indexPath.row].description ?? ""
+            detailVc.abv = beerList[indexPath.row].abv ?? 0
+            detailVc.ibu = beerList[indexPath.row].ibu ?? 0
             self.navigationController?.pushViewController(detailVc, animated: true)
         }
     }
