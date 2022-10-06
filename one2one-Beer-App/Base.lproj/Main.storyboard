@@ -101,22 +101,46 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-7i-Z0u">
+                                <rect key="frame" x="0.0" y="807" width="414" height="47"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajZ-f2-95T">
+                                        <rect key="frame" x="24" y="8" width="366" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Get a random beer!"/>
+                                        <connections>
+                                            <action selector="onRandomBeerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gMm-lJ-vVo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ajZ-f2-95T" firstAttribute="leading" secondItem="mlV-7i-Z0u" secondAttribute="leadingMargin" constant="16" id="0r9-EI-Ujh"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="ajZ-f2-95T" secondAttribute="bottom" id="CLE-4c-9Qo"/>
+                                    <constraint firstItem="ajZ-f2-95T" firstAttribute="top" secondItem="mlV-7i-Z0u" secondAttribute="topMargin" id="hsg-KU-QDM"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="ajZ-f2-95T" secondAttribute="trailing" constant="16" id="nDL-wZ-VlP"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UAV-JS-PKJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0cV-nm-btG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UAV-JS-PKJ" secondAttribute="bottom" id="2f3-gc-prE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mlV-7i-Z0u" secondAttribute="bottom" constant="8" id="QKH-2Y-eW9"/>
                             <constraint firstItem="zgt-UD-qIJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VQE-YG-ARn"/>
                             <constraint firstItem="zgt-UD-qIJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VzH-kY-2h0"/>
                             <constraint firstItem="UAV-JS-PKJ" firstAttribute="top" secondItem="zgt-UD-qIJ" secondAttribute="bottom" id="Wm1-5K-nxq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UAV-JS-PKJ" secondAttribute="bottom" id="fbj-EW-APN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mlV-7i-Z0u" secondAttribute="trailing" id="gdf-D8-sWJ"/>
                             <constraint firstItem="UAV-JS-PKJ" firstAttribute="top" secondItem="zgt-UD-qIJ" secondAttribute="bottom" id="hMb-Mq-L3t"/>
                             <constraint firstAttribute="trailing" secondItem="zgt-UD-qIJ" secondAttribute="trailing" id="j3V-zn-rh8"/>
+                            <constraint firstItem="mlV-7i-Z0u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sjW-gj-CAe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UAV-JS-PKJ" secondAttribute="trailing" id="uZ4-ti-66R"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="URA-xx-5Nx"/>
                     <connections>
+                        <outlet property="randomBeerButton" destination="ajZ-f2-95T" id="ELJ-WN-RFb"/>
                         <outlet property="searchBar" destination="zgt-UD-qIJ" id="ah6-G0-OzL"/>
                         <outlet property="tableView" destination="UAV-JS-PKJ" id="UOl-FH-IMS"/>
                     </connections>

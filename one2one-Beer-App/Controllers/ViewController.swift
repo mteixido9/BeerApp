@@ -6,7 +6,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var randomBeerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         startService()
@@ -21,11 +22,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
     private func setDelegates() {
         self.searchBar.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
+    }
+    @IBAction func onRandomBeerPressed(_ sender: Any) {
+        randomBeerButton.isUserInteractionEnabled = false
+        beersViewModel.getRandomBeer { [self] in
+            DispatchQueue.main.async{
+                if let detailVc = storyboard?.instantiateViewController(withIdentifier: "BeerDetailViewController") as? BeerDetailViewController{
+                    guard let randomBeer = beersViewModel.randomBeer else { return  }
+                    detailVc.image = randomBeer.imageUrl ?? ""
+                    detailVc.name = randomBeer.name ?? ""
+                    detailVc.tag = randomBeer.tagline ?? ""
+                    detailVc.descriptionText = randomBeer.description ?? ""
+                    detailVc.abv = randomBeer.abv ?? 0
+                    detailVc.ibu = randomBeer.ibu ?? 0
+                    self.navigationController?.pushViewController(detailVc, animated: true)
+                    randomBeerButton.isUserInteractionEnabled = true
+                }
+            }
+            
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

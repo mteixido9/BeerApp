@@ -24,9 +24,11 @@ class BeerDetailViewController: UIViewController {
     }
 
     func setupDetailView() {
-        let url = URL(string: image ) //TODO HELPER
-        let data = try? Data(contentsOf: url!)
-        beerDetailImageView.image = UIImage(data: data!)
+        let url = URL(string: image )
+        if url != nil {
+            let data = try? Data(contentsOf: url!)
+            beerDetailImageView.image = UIImage(data: data!)
+        }
         nameLabel.text =  name
         tabLabel.text =  tag
         descriptionTextView.text = descriptionText

@@ -3,6 +3,7 @@ import Foundation
 class BeersViewModel {
     var beersLoaded: (([Beer]?, Bool) -> Void)?
     var beerList: [Beer]?
+    var randomBeer: Beer?
 
     func retrieveBeers(_ completionHandler:@escaping (()-> Void)) {
         BeerApiManager.shared.retrieveBeers{ [weak self] response in
@@ -22,6 +23,16 @@ class BeersViewModel {
         } fail: { [weak self] in
             self?.handleResponse(response: nil, success: false)
         }
+    }
+    
+    func getRandomBeer(_ completionHandler:@escaping (()-> Void)){
+        BeerApiManager.shared.getRandomBeer(success: { [weak self] response in
+            self?.randomBeer = response.first
+            self?.handleResponse(response: response, success: true)
+            completionHandler()
+        }, fail: { [weak self] in
+            self?.handleResponse(response: nil, success: false)
+        })
     }
 
     private func handleResponse(response: [Beer]?, success: Bool) {
