@@ -49,6 +49,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return beerCell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? BeerDetailViewController{
+            guard let beerList = beersViewModel.beerList else { return  }
+            detailVc.setupDetailView(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl, beerDescription: beerList[indexPath.row].description)
+            self.navigationController?.pushViewController(detailVc, animated: true)
+        }
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == ""  { return }
         if searchText.count >= 3{

@@ -20,6 +20,8 @@
 		4994466D28EAF5080057547C /* BeersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994466C28EAF5080057547C /* BeersViewModel.swift */; };
 		4994466F28EB121B0057547C /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994466E28EB121B0057547C /* ServiceManager.swift */; };
 		4994467128EB31230057547C /* BeerApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994467028EB31230057547C /* BeerApiManager.swift */; };
+		49ADAED628EEC0E900409AD5 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADAED528EEC0E900409AD5 /* BeerDetailViewController.swift */; };
+		49ADAED828EEC6AC00409AD5 /* BeerDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49ADAED728EEC6AC00409AD5 /* BeerDetail.storyboard */; };
 		49B7850128ED086E000F9579 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B7850028ED086E000F9579 /* BeerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		4994466C28EAF5080057547C /* BeersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewModel.swift; sourceTree = "<group>"; };
 		4994466E28EB121B0057547C /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		4994467028EB31230057547C /* BeerApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerApiManager.swift; sourceTree = "<group>"; };
+		49ADAED528EEC0E900409AD5 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		49ADAED728EEC6AC00409AD5 /* BeerDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeerDetail.storyboard; sourceTree = "<group>"; };
 		49B7850028ED086E000F9579 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		9968F5D7FE5E325A8D67CB83 /* Pods-one2one-Beer-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one2one-Beer-AppTests.release.xcconfig"; path = "Target Support Files/Pods-one2one-Beer-AppTests/Pods-one2one-Beer-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB7EE690838E1414CE893313 /* Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig"; path = "Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				4994463E28E847350057547C /* Assets.xcassets */,
 				4994464028E847350057547C /* LaunchScreen.storyboard */,
 				4994464328E847350057547C /* Info.plist */,
+				49ADAED728EEC6AC00409AD5 /* BeerDetail.storyboard */,
 			);
 			path = "one2one-Beer-App";
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				4994463928E847330057547C /* ViewController.swift */,
+				49ADAED528EEC0E900409AD5 /* BeerDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4994464228E847350057547C /* LaunchScreen.storyboard in Resources */,
+				49ADAED828EEC6AC00409AD5 /* BeerDetail.storyboard in Resources */,
 				4994463F28E847350057547C /* Assets.xcassets in Resources */,
 				4994463D28E847330057547C /* Main.storyboard in Resources */,
 			);
@@ -420,6 +427,7 @@
 				4994467128EB31230057547C /* BeerApiManager.swift in Sources */,
 				4994466B28EAF2B20057547C /* Beer.swift in Sources */,
 				4994466D28EAF5080057547C /* BeersViewModel.swift in Sources */,
+				49ADAED628EEC0E900409AD5 /* BeerDetailViewController.swift in Sources */,
 				4994466F28EB121B0057547C /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
