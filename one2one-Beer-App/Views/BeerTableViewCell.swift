@@ -16,7 +16,7 @@ class BeerTableViewCell: UITableViewCell {
     @IBOutlet weak var ibuLabel: UILabel!
     
     public func configureBeerCell(beerName: String?, beerTag: String?, abv: Double?, ibu:Double?, beerUrlImage: String?) {
-        let url = URL(string: beerUrlImage ?? "")
+        let url = URL(string: beerUrlImage ?? "") //TODO HELPER URL
         let data = try? Data(contentsOf: url!)
         beerImageView.image = UIImage(data: data!)
         beerNameLabel.text = beerName ?? ""

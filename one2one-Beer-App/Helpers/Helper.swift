@@ -2,8 +2,6 @@ class Helper {
     static var app: Helper = {
         return Helper()
     }()
-    
-  
   
     func getGraduation(abv: Double)-> String {
         if abv < 4.0 {

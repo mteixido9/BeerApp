@@ -1,7 +1,7 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate{
- 
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate, UIScrollViewDelegate {
+    
     let beersViewModel = BeersViewModel()
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -62,7 +62,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let beerCell = tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as! BeerTableViewCell
         guard let beerList = beersViewModel.beerList else { return beerCell }
-            beerCell.configureBeerCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
+        beerCell.configureBeerCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
         return beerCell
     }
     
@@ -87,6 +87,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     tableView.reloadData()
                 }
             }
+        }
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        if position > tableView.contentSize.height-100-scrollView.frame.size.height{
+            beersViewModel.retrieveBeers(pagination: true, page: beersViewModel.beerListPage) {
+                DispatchQueue.main.async { [self] in
+                    tableView.reloadData()
+                }
+            }
+            print("fetch more")
         }
     }
 }

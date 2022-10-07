@@ -11,8 +11,8 @@ class BeerApiManager {
     public static let shared = BeerApiManager()
     var isFetchInProgress = false
     
-    func retrieveBeers(success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
-        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers") {response in
+    func retrieveBeers(page: Int? = nil, success:@escaping (([Beer])-> Void), fail: @escaping (()-> Void)) {
+        ServiceManager.shared.callService(urlString: "https://api.punkapi.com/v2/beers?page=\(page ?? 1)") {response in
             success(response)
         } fail: {
             fail()
