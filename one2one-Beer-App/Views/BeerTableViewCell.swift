@@ -21,8 +21,8 @@ class BeerTableViewCell: UITableViewCell {
         beerImageView.image = UIImage(data: data!)
         beerNameLabel.text = beerName ?? ""
         beerTagLabel.text =  beerTag ?? ""
-        abvLabel.text = "ABU: \(String(format: "%.1f", abv ?? 0))"
-        ibuLabel.text = "IBU: \(String(format: "%.1f", ibu ?? 0))"
+        abvLabel.text = Helper.app.getGraduation(abv: abv ?? 0)
+        ibuLabel.text = Helper.app.getGraduation(ibu: ibu ?? 0)
     }
 
 }
