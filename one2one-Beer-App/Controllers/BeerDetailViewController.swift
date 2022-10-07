@@ -1,7 +1,6 @@
 import Foundation
 import UIKit
 
-
 class BeerDetailViewController: UIViewController {
     
     @IBOutlet weak var beerDetailImageView: UIImageView!
@@ -17,8 +16,7 @@ class BeerDetailViewController: UIViewController {
     var descriptionText = ""
     var abv: Double = 0
     var ibu: Double = 0
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDetailView()

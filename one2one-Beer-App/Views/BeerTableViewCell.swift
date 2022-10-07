@@ -1,10 +1,3 @@
-//
-//  BeerTableViewCell.swift
-//  one2one-Beer-App
-//
-//  Created by Marc  Teixidó Carrera on 5/10/22.
-//
-
 import UIKit
 
 class BeerTableViewCell: UITableViewCell {

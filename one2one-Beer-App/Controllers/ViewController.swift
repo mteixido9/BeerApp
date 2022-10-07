@@ -98,7 +98,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     tableView.reloadData()
                 }
             }
-            print("fetch more")
         }
     }
 }
