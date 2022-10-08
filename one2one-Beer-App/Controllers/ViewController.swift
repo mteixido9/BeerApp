@@ -62,7 +62,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let beerCell = tableView.dequeueReusableCell(withIdentifier: "BeerCell", for: indexPath) as! BeerTableViewCell
         guard let beerList = beersViewModel.beerList else { return beerCell }
-        beerCell.configureBeerCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
+        DispatchQueue.main.async {
+            beerCell.configureBeerCell(beerName: beerList[indexPath.row].name, beerTag: beerList[indexPath.row].tagline, abv: beerList[indexPath.row].abv, ibu: beerList[indexPath.row].ibu, beerUrlImage: beerList[indexPath.row].imageUrl)
+        }
         return beerCell
     }
     
@@ -75,6 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             detailVc.descriptionText = beerList[indexPath.row].description ?? ""
             detailVc.abv = beerList[indexPath.row].abv ?? 0
             detailVc.ibu = beerList[indexPath.row].ibu ?? 0
+            detailVc.matchingFood = beerList[indexPath.row].foodPairing?.joined(separator: ", ") ?? ""
             self.navigationController?.pushViewController(detailVc, animated: true)
         }
     }

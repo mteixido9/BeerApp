@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  one2one-Beer-App
-//
-//  Created by Marc  Teixidó Carrera on 1/10/22.
-//
 
 import UIKit
 

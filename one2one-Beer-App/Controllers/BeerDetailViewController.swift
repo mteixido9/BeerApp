@@ -7,6 +7,7 @@ class BeerDetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tabLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var foodPairingLabel: UILabel!
     @IBOutlet weak var abvLabel: UILabel!
     @IBOutlet weak var ibuLabel: UILabel!
     
@@ -16,6 +17,7 @@ class BeerDetailViewController: UIViewController {
     var descriptionText = ""
     var abv: Double = 0
     var ibu: Double = 0
+    var matchingFood = ""
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,5 +35,6 @@ class BeerDetailViewController: UIViewController {
         descriptionTextView.text = descriptionText
         abvLabel.text = Helper.app.getGraduation(abv: abv)
         ibuLabel.text = Helper.app.getGraduation(ibu: ibu)
+        foodPairingLabel.text = "Matching food: \(matchingFood)"
     }
 }
