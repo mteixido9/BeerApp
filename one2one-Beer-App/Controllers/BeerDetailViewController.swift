@@ -1,12 +1,13 @@
 import Foundation
 import UIKit
+import Kingfisher
 
 class BeerDetailViewController: UIViewController {
     
     @IBOutlet weak var beerDetailImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tabLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var foodPairingLabel: UILabel!
     @IBOutlet weak var abvLabel: UILabel!
     @IBOutlet weak var ibuLabel: UILabel!
@@ -27,12 +28,11 @@ class BeerDetailViewController: UIViewController {
     func setupDetailView() {
         let url = URL(string: image )
         if url != nil {
-            let data = try? Data(contentsOf: url!)
-            beerDetailImageView.image = UIImage(data: data!)
+            beerDetailImageView.kf.setImage(with: url)
         }
         nameLabel.text =  name
         tabLabel.text =  tag
-        descriptionTextView.text = descriptionText
+        descriptionLabel.text = descriptionText
         abvLabel.text = Helper.app.getGraduation(abv: abv)
         ibuLabel.text = Helper.app.getGraduation(ibu: ibu)
         foodPairingLabel.text = "Matching food: \(matchingFood)"

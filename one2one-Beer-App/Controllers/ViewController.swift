@@ -3,10 +3,12 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate, UIScrollViewDelegate {
     
     let beersViewModel = BeersViewModel()
+    var timer: Timer? = nil
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var randomBeerButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,9 +17,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     private func startService(){
-        beersViewModel.retrieveBeers { [self] in
-            DispatchQueue.main.async {
+        activityIndicator.startAnimating()
+        beersViewModel.retrieveBeers {
+            DispatchQueue.main.async { [self] in
                 tableView.reloadData()
+                activityIndicator.stopAnimating()
             }
         }
     }
@@ -52,7 +56,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        120
+        UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,10 +88,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText == ""  { return }
-        if searchText.count >= 3{
-            beersViewModel.retrieveBeersBy(foodName: searchText) {
-                DispatchQueue.main.async { [self] in
-                    tableView.reloadData()
+        if searchText.count >= 3 {
+            if timer != nil {
+                timer?.invalidate()
+            }
+            timer = Timer.scheduledTimer(withTimeInterval: 0.420, repeats: false) { [self] timer in
+                activityIndicator.startAnimating()
+                beersViewModel.retrieveBeersBy(foodName: searchText) {
+                    DispatchQueue.main.async { [self] in
+                        tableView.reloadData()
+                        activityIndicator.stopAnimating()
+                        timer.invalidate()
+                    }
                 }
             }
         }
@@ -96,9 +108,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let position = scrollView.contentOffset.y
         if position > tableView.contentSize.height-100-scrollView.frame.size.height{
+            activityIndicator.startAnimating()
             beersViewModel.retrieveBeers(pagination: true, page: beersViewModel.beerListPage) {
                 DispatchQueue.main.async { [self] in
                     tableView.reloadData()
+                    activityIndicator.stopAnimating()
                 }
             }
         }

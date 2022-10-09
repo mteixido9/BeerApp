@@ -9,10 +9,12 @@ class BeersViewModel {
     func retrieveBeers(pagination: Bool = false, page: Int? = nil, _ completionHandler:@escaping (()-> Void)) {
         BeerApiManager.shared.retrieveBeers(page: page, success: { response in
             if(pagination){
-                self.beerList?.append(contentsOf: response)
-                self.handleResponse(response: response, success: true)
-                self.beerListPage+=1
-                completionHandler()
+                DispatchQueue.main.async {
+                    self.beerList?.append(contentsOf: response)
+                    self.handleResponse(response: response, success: true)
+                    self.beerListPage+=1
+                    completionHandler()
+                }
                 return
             }
             self.beerList = response
