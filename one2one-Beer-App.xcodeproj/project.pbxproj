@@ -10,7 +10,7 @@
 		1B2A88300D6B9171DD462A9A /* Pods_one2one_Beer_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE70AFE74D2B03C19242DC72 /* Pods_one2one_Beer_AppTests.framework */; };
 		4994463628E847330057547C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463528E847330057547C /* AppDelegate.swift */; };
 		4994463828E847330057547C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463728E847330057547C /* SceneDelegate.swift */; };
-		4994463A28E847330057547C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463928E847330057547C /* ViewController.swift */; };
+		4994463A28E847330057547C /* BeersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4994463928E847330057547C /* BeersViewController.swift */; };
 		4994463D28E847330057547C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4994463B28E847330057547C /* Main.storyboard */; };
 		4994463F28E847350057547C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4994463E28E847350057547C /* Assets.xcassets */; };
 		4994464228E847350057547C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4994464028E847350057547C /* LaunchScreen.storyboard */; };
@@ -52,7 +52,7 @@
 		4994463228E847330057547C /* one2one-Beer-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "one2one-Beer-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4994463528E847330057547C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4994463728E847330057547C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4994463928E847330057547C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4994463928E847330057547C /* BeersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersViewController.swift; sourceTree = "<group>"; };
 		4994463C28E847330057547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4994463E28E847350057547C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4994464128E847350057547C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		4994466628E84AE30057547C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4994463928E847330057547C /* ViewController.swift */,
+				4994463928E847330057547C /* BeersViewController.swift */,
 				49ADAED528EEC0E900409AD5 /* BeerDetailViewController.swift */,
 			);
 			path = Controllers;
@@ -480,7 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BAC47528F093AB00F2A67F /* Helper.swift in Sources */,
-				4994463A28E847330057547C /* ViewController.swift in Sources */,
+				4994463A28E847330057547C /* BeersViewController.swift in Sources */,
 				4994463628E847330057547C /* AppDelegate.swift in Sources */,
 				4994463828E847330057547C /* SceneDelegate.swift in Sources */,
 				49B7850128ED086E000F9579 /* BeerTableViewCell.swift in Sources */,

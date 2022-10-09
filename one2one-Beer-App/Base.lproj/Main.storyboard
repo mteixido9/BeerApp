@@ -11,7 +11,7 @@
         <!--Beerpedia-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ListedBeer" id="BYZ-38-t0r" customClass="ViewController" customModule="one2one_Beer_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListedBeer" id="BYZ-38-t0r" customClass="BeersViewController" customModule="one2one_Beer_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

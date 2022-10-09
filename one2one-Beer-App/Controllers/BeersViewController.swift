@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate, UIScrollViewDelegate {
+class BeersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate, UIScrollViewDelegate {
     
     let beersViewModel = BeersViewModel()
     var timer: Timer? = nil
