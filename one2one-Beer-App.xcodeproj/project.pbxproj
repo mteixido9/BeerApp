@@ -119,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				4994463428E847330057547C /* one2one-Beer-App */,
-				49BAC47328F0939D00F2A67F /* Helpers */,
 				4994464B28E847350057547C /* one2one-Beer-AppTests */,
 				4994465528E847350057547C /* one2one-Beer-AppUITests */,
 				4994463328E847330057547C /* Products */,
@@ -141,6 +140,7 @@
 		4994463428E847330057547C /* one2one-Beer-App */ = {
 			isa = PBXGroup;
 			children = (
+				49BAC47328F0939D00F2A67F /* Helpers */,
 				4994466928EAEFFC0057547C /* Services */,
 				4994466728E84C2F0057547C /* Models */,
 				4994466828EAEB7A0057547C /* ViewModels */,
@@ -247,15 +247,12 @@
 				4994462E28E847330057547C /* Sources */,
 				4994462F28E847330057547C /* Frameworks */,
 				4994463028E847330057547C /* Resources */,
-				C53597AAD3797A9788C7D2F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "one2one-Beer-App";
-			packageProductDependencies = (
-			);
 			productName = "one2one-Beer-App";
 			productReference = 4994463228E847330057547C /* one2one-Beer-App.app */;
 			productType = "com.apple.product-type.application";
@@ -287,7 +284,6 @@
 				4994464E28E847350057547C /* Sources */,
 				4994464F28E847350057547C /* Frameworks */,
 				4994465028E847350057547C /* Resources */,
-				F603EBF58405457FBA27A3AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,8 +327,6 @@
 				Base,
 			);
 			mainGroup = 4994462928E847330057547C;
-			packageReferences = (
-			);
 			productRefGroup = 4994463328E847330057547C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,40 +430,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C53597AAD3797A9788C7D2F9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App/Pods-one2one-Beer-App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F603EBF58405457FBA27A3AF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-one2one-Beer-App-one2one-Beer-AppUITests/Pods-one2one-Beer-App-one2one-Beer-AppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
